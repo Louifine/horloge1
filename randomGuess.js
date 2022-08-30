@@ -1,3 +1,6 @@
+const reponse = document.getElementById("guess");
+console.log(reponse);
+
 let findMe = Math.floor(Math.random()*101);
 
 document.addEventListener('DOMContentLoaded', function(){
@@ -32,11 +35,12 @@ function changeEventHandler(e) {
 //     console.log(findMe);
 //     console.log(reponse);
 //     reponse.addEventListener('change', (e) =>{
-//         console.log(e.reponse.value);
-//         if(e.reponse.value == findMe){
+//         console.log(e);
+//         console.log(e.target);
+//         if(reponse.value == findMe){
 //             let replay = document.getElementById("guessGame").innerHTML = "<p id=\"textGame\">Félicitations, vous avez trouvé le bon nombre !</p> <button id=\"play\">Voulez-vous rejouer ?</button>";
 //         }
-//         else if(e.reponse.value > findMe){
+//         else if(e.target.value > findMe){
 //             zoneDeTexte.textContent = "Cherche encore, c'est moins";
 //         }
 //         else{
