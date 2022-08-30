@@ -1,5 +1,4 @@
 const reponse = document.getElementById("guess");
-console.log(reponse);
 
 let findMe = Math.floor(Math.random()*101);
 

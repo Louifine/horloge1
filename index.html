@@ -9,13 +9,15 @@
     <script src="horloge.js" defer></script>
     <script src="randomGuess.js" defer></script>
     <script src="diceGame.js" defer></script>
+    <script src="carroussel.js" defer></script>
+    <script src="afficheQui.js" defer></script>
   </head>
   <body>
     <div id="selectProj">
-      <button id="hour"></button>
-      <button id="gg"></button>
-      <button id="rollDice"></button>
-      <button id="carrous"></button>
+      <button class="custom-btn btn-5" id="hour">Besoin de l'heure ?</button>
+      <button class="custom-btn btn-5" id="gg">Jeu de hasard :)</button>
+      <button class="custom-btn btn-5" id="rollDice">Besoin de dés ?</button>
+      <button class="custom-btn btn-5" id="carrous">Quelques photos...</button>
     </div>
     <div id="heure">
       <p>00:00:00</p>
@@ -57,6 +59,91 @@
         <div class="dotBR"></div>
         <div class="dotML"></div>
         <div class="dotMR"></div>
+      </div>
+    </div>
+    <div class="container" id="container">
+      <div class="previous">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+        >
+          <g id="previous" transform="translate(-653 -480)">
+            <circle
+              id="Ellipse_1"
+              data-name="Ellipse 1"
+              cx="30"
+              cy="30"
+              r="30"
+              transform="translate(653 480)"
+              fill="#535353"
+            />
+            <path
+              id="Polygon_1"
+              data-name="Polygon 1"
+              d="M9,0l9,16H0Z"
+              transform="translate(680.206 496.572) rotate(30)"
+              fill="#fff"
+            />
+          </g>
+        </svg>
+      </div>
+      <div class="gallery-wrapper">
+        <div class="gallery">
+          <img
+            class="card current"
+            src="https://www.fillmurray.com/200/200"
+            alt="Christmas Cookies"
+          />
+          <img
+            class="card"
+            src="https://www.fillmurray.com/200/150"
+            alt="Christmas Cookies"
+          />
+          <img
+            class="card"
+            src="https://www.fillmurray.com/200/170"
+            alt="Christmas Cookies"
+          />
+          <img
+            class="card"
+            src="https://www.fillmurray.com/200/180"
+            alt="Christmas Cookies"
+          />
+          <img
+            class="card"
+            src="https://www.fillmurray.com/200/120"
+            alt="Christmas Cookies"
+          />
+        </div>
+      </div>
+      <div class="next">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="60"
+          height="60"
+          viewBox="0 0 60 60"
+        >
+          <g id="next" transform="translate(-1207 -480)">
+            <circle
+              id="Ellipse_2"
+              data-name="Ellipse 2"
+              cx="30"
+              cy="30"
+              r="30"
+              transform="translate(1207 480)"
+              fill="#535353"
+            />
+            <path
+              id="Polygon_2"
+              data-name="Polygon 2"
+              d="M9,0l9,16H0Z"
+              transform="translate(1240.794 523.428) rotate(-150)"
+              fill="#fff"
+            />
+          </g>
+        </svg>
       </div>
     </div>
   </body>
