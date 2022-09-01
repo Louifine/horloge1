@@ -2,10 +2,12 @@
 new Array(...document.getElementsByClassName('dice'));
 [...document.getElementsByClassName('dice')].forEach(item => item.addEventListener("click", event => {
   let num = Math.floor((Math.random()*6)+1);
-  let elementToChange = event.target;
-  if(event.target.className != "dice"){
-    elementToChange = event.target.parentNode;
-  }
+  // let elementToChange = event.target;
+  // if(event.target.className != "dice"){
+  //   elementToChange = event.target.parentNode;
+  // }
+
+let elementToChange = event.target.closest('.dice');
 
   if (num == 1){
       elementToChange.innerHTML = `<div class="dot"></div>`;
